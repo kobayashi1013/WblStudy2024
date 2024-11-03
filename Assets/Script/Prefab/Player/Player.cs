@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Prefab.Player
 {
@@ -8,6 +9,18 @@ namespace Prefab.Player
         [SerializeField] private float _rotationSensitive;
 
         private CharacterController _characterController; //キャラクターコントローラー
+        private Vector2 _moveInput = Vector2.zero; //入力の取得
+        private Vector2 _rotateInput = Vector2.zero;
+
+        public void OnMove(InputAction.CallbackContext context)
+        {
+            _moveInput = context.ReadValue<Vector2>();
+        }
+
+        public void OnRotate(InputAction.CallbackContext context)
+        {
+            _rotateInput = context.ReadValue<Vector2>();
+        }
 
         private void Start()
         {
@@ -27,8 +40,8 @@ namespace Prefab.Player
         private void PlayerMove()
         {
             //入力を取得
-            float horizontal = Input.GetAxis("Horizontal"); //左右
-            float vertical = Input.GetAxis("Vertical"); //上下
+            float horizontal = _moveInput.x; //左右
+            float vertical = _moveInput.y; //上下
 
             //移動方向の計算
             Vector3 inputDirection = new Vector3(horizontal, 0f, vertical); //入力した方向（上下右左）
@@ -44,7 +57,7 @@ namespace Prefab.Player
         private void PlayerRotate()
         {
             //入力を取得
-            float mouseX = Input.GetAxis("Mouse X"); //マウスX軸の１フレーム移動量（座標ではない）
+            float mouseX = _rotateInput.x; //マウスX軸の１フレーム移動量（座標ではない）
  
             //回転の計算
             Vector3 inputRotate = new Vector3(0f, mouseX, 0f); //軸の回転
