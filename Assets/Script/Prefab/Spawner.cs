@@ -6,7 +6,7 @@ namespace Prefab
     {
         [SerializeField] private GameObject _playerPrefab; //プレイヤーのプレハブ
 
-        void Start()
+        private void Start()
         {
             Vector3 position = this.transform.position; //スポーンする位置
             Quaternion rotation = Quaternion.identity; //スポーンするプレイヤーの最初の向き
