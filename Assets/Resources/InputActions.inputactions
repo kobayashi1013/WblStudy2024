@@ -174,7 +174,7 @@
             "id": "775b7135-6ae7-418b-9da0-f84bb5d4fdda",
             "actions": [
                 {
-                    "name": "Rotate",
+                    "name": "Turn",
                     "type": "Value",
                     "id": "25484406-db6b-4df3-8696-7eb540eec403",
                     "expectedControlType": "Vector2",
@@ -191,7 +191,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Rotate",
+                    "action": "Turn",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
