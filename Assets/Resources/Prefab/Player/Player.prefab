@@ -218,14 +218,6 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 7d9a1a8b-1838-47fe-96bd-f34c4c7b2517
     m_ActionName: 'KeyBoard/Rotate[/Mouse/delta]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 347e02d4-4ccf-4bdf-b7c1-da4686557328
-    m_ActionName: LeftController/Move
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: b86dd4f2-8ddc-42da-82ad-fc967294e519
-    m_ActionName: RightController/Rotate
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: KeyBoard
