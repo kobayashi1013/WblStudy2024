@@ -15,6 +15,7 @@ namespace Scene.InGame
             var startGameArgs = new StartGameArgs() //セッションの設定をする。
             {
                 GameMode = GameMode.AutoHostOrClient, //最初に入るプレイヤーならホストとなる。
+                Scene = SceneRef.FromIndex(0),
                 SceneManager = runner.GetComponent<NetworkSceneManagerDefault>(), //シーン遷移をするコンポーネント
                 PlayerCount = 2, //プレイヤーの最大人数
             };

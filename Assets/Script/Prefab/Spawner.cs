@@ -1,10 +1,11 @@
+using Unity.XR.CoreUtils;
 using UnityEngine;
 
 namespace Prefab
 {
     public class Spawner : MonoBehaviour
     {
-        [SerializeField] private GameObject _playerPrefab; //プレイヤーのプレハブ
+        [SerializeField] private XROrigin _playerPrefab; //プレイヤーのプレハブ
 
         private void Start()
         {
