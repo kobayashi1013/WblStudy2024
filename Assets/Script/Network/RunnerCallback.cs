@@ -59,7 +59,15 @@ namespace Network
             }
         }
 
-        public void OnPlayerLeft(NetworkRunner runner, PlayerRef player) { }
+        public void OnPlayerLeft(NetworkRunner runner, PlayerRef player)
+        {
+            if (runner.IsServer == true)
+            {
+                if (runner.TryGetPlayerObject(player, out var playerObj))
+                    runner.Despawn(playerObj);
+            }
+        }
+
         public void OnInput(NetworkRunner runner, NetworkInput input)
         {
             if (_xrOrigin != null)

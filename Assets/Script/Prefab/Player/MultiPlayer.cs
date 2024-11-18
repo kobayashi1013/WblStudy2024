@@ -42,14 +42,17 @@ namespace Prefab.Player
                     _leftHand.localRotation = data.leftHand.localRotation;
                     _rightHand.localPosition = data.rightHand.localPosition;
                     _rightHand.localRotation = data.rightHand.localRotation;
-
-                    Vector3 colliderPosition = new Vector3(
-                        data.head.localPosition.x,
-                        _collider.center.y,
-                        data.head.localPosition.z);
-                    _collider.center = colliderPosition;
                 }
             }
+        }
+
+        public override void Render()
+        {
+            Vector3 center = new Vector3(
+                _head.localPosition.x,
+                _collider.center.y,
+                _head.localPosition.z);
+            _collider.center = center;
         }
     }
 }

@@ -22,7 +22,6 @@ namespace Network
             public Vector3 localPosition;
             public Quaternion localRotation;
             public NetworkButtons buttons;
-
         }
 
         public enum Buttons
