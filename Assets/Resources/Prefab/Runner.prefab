@@ -73,3 +73,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _multiPlayerPrefab: {fileID: 4749576713320787633, guid: 4252adbb6af423c44bfa9118ef5bf6b7, type: 3}
+  _headPosition: {fileID: 5198488940627808414, guid: 7d6ce56406366bd4e8107f264fc657d1, type: 3}
+  _headRosition: {fileID: -7995611194301310416, guid: 7d6ce56406366bd4e8107f264fc657d1, type: 3}
+  _leftHandPosition: {fileID: -2635791639814214731, guid: 7d6ce56406366bd4e8107f264fc657d1, type: 3}
+  _leftHandRosition: {fileID: 9094136184073592136, guid: 7d6ce56406366bd4e8107f264fc657d1, type: 3}
+  _leftHandSelect: {fileID: -1552682097920164666, guid: 7d6ce56406366bd4e8107f264fc657d1, type: 3}
+  _rightHandPosition: {fileID: 5993448597324314226, guid: 7d6ce56406366bd4e8107f264fc657d1, type: 3}
+  _rightHandRosition: {fileID: 6368495968705830993, guid: 7d6ce56406366bd4e8107f264fc657d1, type: 3}
+  _rightHandSelect: {fileID: 3038892476058229312, guid: 7d6ce56406366bd4e8107f264fc657d1, type: 3}

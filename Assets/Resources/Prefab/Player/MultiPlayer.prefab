@@ -119,7 +119,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 4749576713320787633}
   - component: {fileID: 3613854619312109463}
   - component: {fileID: 1422611558869819841}
+  - component: {fileID: 8596989855392331573}
   m_Layer: 0
   m_Name: MultiPlayer
   m_TagString: Untagged
@@ -180,6 +181,7 @@ MonoBehaviour:
   NestedObjects: []
   NetworkedBehaviours:
   - {fileID: 3613854619312109463}
+  - {fileID: 8596989855392331573}
   - {fileID: 5194685220959454371}
   - {fileID: 3373955909889634283}
   - {fileID: 8599882478547456564}
@@ -222,6 +224,25 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 0.9, z: 0}
+--- !u!114 &8596989855392331573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2382274480879229010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d61d7750a3891ac48bb242fe4ec6180a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _head: {fileID: 7506196667094624308}
+  _leftHand: {fileID: 5820661935385381178}
+  _rightHand: {fileID: 769799512798257941}
+  _collider: {fileID: 1422611558869819841}
+  _headRenderer: {fileID: 3103085822614407555}
+  _leftHandRenderer: {fileID: 3736527279958233563}
+  _rightHandRenderer: {fileID: 569651366544741956}
 --- !u!1 &2449992123412032955
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,7 +465,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
