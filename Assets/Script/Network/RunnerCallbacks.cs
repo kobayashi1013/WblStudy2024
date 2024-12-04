@@ -11,6 +11,8 @@ namespace Network
     public class RunnerCallbacks : MonoBehaviour, INetworkRunnerCallbacks
     {
         [SerializeField] private NetworkObject _multiPlayerPrefab; //MultiPlayerプレハブ
+        [SerializeField] private NetworkObject _ballPrefab;
+        [SerializeField] private Vector3 _ballPosition;
         [Header("Input Reference")]
         [SerializeField] private InputActionReference _headPosition;
         [SerializeField] private InputActionReference _headRosition;
@@ -123,6 +125,11 @@ namespace Network
             //一番最初に見つけたオブジェクトを取得する
             //今回はXrOrigin(XrPlayer)は一つしかない
             _xrOrigin = FindFirstObjectByType<XROrigin>();
+
+            if (runner.IsServer == true)
+            {
+                runner.Spawn(_ballPrefab, _ballPosition, Quaternion.identity, null); //ボールをスポーンする
+            }
         }
 
         public void OnSceneLoadStart(NetworkRunner runner) { }

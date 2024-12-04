@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6545149164080190867}
   - component: {fileID: 5244348440492065411}
   - component: {fileID: 257602556944851077}
+  - component: {fileID: -4739791581367763937}
   - component: {fileID: -5981280515564650797}
   m_Layer: 0
   m_Name: Runner
@@ -60,6 +61,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsSceneTakeOverEnabled: 1
   LogSceneLoadErrors: 1
+--- !u!114 &-4739791581367763937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4434773947591068012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5a1ff9dee264bfd829a39e6542dcbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _physicsAuthority: 2
+  _physicsTiming: 3
+  ClientPhysicsSimulation: 0
+  DeltaTimeMultiplier: 1
+  SetUnityFixedTimestep: 0
 --- !u!114 &-5981280515564650797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,6 +91,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _multiPlayerPrefab: {fileID: 4749576713320787633, guid: 4252adbb6af423c44bfa9118ef5bf6b7, type: 3}
+  _ballPrefab: {fileID: 1036700888326591025, guid: 4a20aac39ee92874f932570b99bdec7b, type: 3}
+  _ballPosition: {x: -69.85478, y: 55.05, z: -143.14975}
   _headPosition: {fileID: 5198488940627808414, guid: 7d6ce56406366bd4e8107f264fc657d1, type: 3}
   _headRosition: {fileID: -7995611194301310416, guid: 7d6ce56406366bd4e8107f264fc657d1, type: 3}
   _leftHandPosition: {fileID: -2635791639814214731, guid: 7d6ce56406366bd4e8107f264fc657d1, type: 3}
