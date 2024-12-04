@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 3613854619312109463}
   - component: {fileID: 1422611558869819841}
   - component: {fileID: 8596989855392331573}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MultiPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
