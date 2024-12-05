@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7241762564054465396}
   - component: {fileID: 569651366544741956}
   - component: {fileID: 5734981062837585913}
+  - component: {fileID: 7435591929756938386}
   m_Layer: 0
   m_Name: RightHand
   m_TagString: Untagged
@@ -125,6 +126,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7435591929756938386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269501493196342987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3656ed8f61935a7428db0dc5e4443f24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _handType: 1
 --- !u!1 &2382274480879229010
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,7 +198,9 @@ MonoBehaviour:
   - {fileID: 8596989855392331573}
   - {fileID: 5194685220959454371}
   - {fileID: 3373955909889634283}
+  - {fileID: 6212327749221440577}
   - {fileID: 8599882478547456564}
+  - {fileID: 7435591929756938386}
 --- !u!114 &3613854619312109463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -359,6 +375,7 @@ GameObject:
   - component: {fileID: 6859576670360014621}
   - component: {fileID: 3736527279958233563}
   - component: {fileID: 5795940936831474149}
+  - component: {fileID: 6212327749221440577}
   m_Layer: 0
   m_Name: LeftHand
   m_TagString: Untagged
@@ -471,3 +488,16 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6212327749221440577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2928445685973885610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3656ed8f61935a7428db0dc5e4443f24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _handType: 0
